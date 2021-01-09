@@ -18,3 +18,6 @@
     <?php endif; ?>
   </div>
 <?php endforeach; ?>
+<button class="js-reset-filters ajax-posts__reset-filters">
+  <span class="ajax-posts__filter-reset-text">+ <?php  printf( __('Reset filters', 'ajax-filter-posts')); ?></span>
+</button>

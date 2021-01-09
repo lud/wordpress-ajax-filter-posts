@@ -64,6 +64,11 @@ msgstr "Afficher plus"
 msgid "Show less"
 msgstr "Afficher moins"
 
+#: templates/partials/filters.php:22
+#, php-format
+msgid "Reset filters"
+msgstr "Réinitialiser les filtres"
+
 #: templates/partials/loop.php:15
 msgid "Load more"
 msgstr "Charger plus"
