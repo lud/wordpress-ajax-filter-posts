@@ -118,6 +118,7 @@ class Ajax_Filter_Posts {
     ]);
 
     $plural_post_name = strtolower(get_post_type_object($query->query['post_type'])->labels->name);
+    $singular_post_name = strtolower(get_post_type_object($query->query['post_type'])->labels->singular_name);
 
     ob_start();
     include( $this->get_local_template('base.php') );
@@ -280,6 +281,7 @@ class Ajax_Filter_Posts {
 
     $query = new WP_Query($args);
     $plural_post_name = strtolower(get_post_type_object($query->query['post_type'])->labels->name);
+    $singular_post_name = strtolower(get_post_type_object($query->query['post_type'])->labels->singular_name);
     $response = [];
     
     ob_start();
