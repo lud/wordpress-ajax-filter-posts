@@ -10,11 +10,11 @@
         </li>
       <?php endforeach; ?>
     </ul>
-    <?php if (count($filterlist['filters']) >= 5): ?>
+    <?php if (count($filterlist['filters']) > 5): ?>
       <div class="ajax-posts__filter-toggle">
         <a href="#" class="js-collapse-filterlist ajax-posts__filter-toggle-show"><?php echo esc_html( __( 'Show more', 'ajax-filter-posts' ) ); ?></a>
         <a href="#" class="js-collapse-filterlist ajax-posts__filter-toggle-hide"><?php echo esc_html( __( 'Show less', 'ajax-filter-posts' ) ); ?></a>
       </div>
-  <?php endif; ?>
+    <?php endif; ?>
   </div>
 <?php endforeach; ?>
